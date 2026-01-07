@@ -16,8 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const li = document.createElement('li');
         li.innerHTML = `
-          <input type="checkbox" class="task-checkbox">
+          <input type="checkbox" class="checkbox">
           <span>${taskText}</span>
+          <div class="task-buttons">
+          <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+          <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+          </div>
         `;
 
         taskList.appendChild(li);
